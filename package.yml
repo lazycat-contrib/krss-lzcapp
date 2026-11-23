@@ -1,0 +1,16 @@
+package: community.lazycat.app.krss
+version: 1.1.9
+name: Krss
+description: "Full-featured self-hosted RSS reader: single binary with SQLite, built-in AI summaries and translation, automation rules, multiple views, and MCP integration."
+min_os_version: 1.5.0
+author: kue02
+license: GPL-2.0
+homepage: https://github.com/kue02/Krss
+
+locales:
+  zh:
+    name: "Krss"
+    description: "功能完整的自托管 RSS 阅读器：单二进制 + SQLite，开箱即用。内置 AI 摘要与翻译、自动化规则引擎、社交 / 通知 / 图片多视图，并支持 MCP 双向集成。"
+  en:
+    name: "Krss"
+    description: "Full-featured self-hosted RSS reader: single binary with SQLite, built-in AI summaries and translation, automation rules, multiple views, and MCP integration."

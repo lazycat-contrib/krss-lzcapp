@@ -1,0 +1,23 @@
+application:
+  subdomain: krss
+  multi_instance: false
+  public_path:
+    - /
+  upstreams:
+    - location: /
+      backend: http://krss:8090/
+
+services:
+  krss:
+    # ghcr.io/kue02/krss:1.1.9
+    image: ghcr.1ms.run/kue02/krss:1.1.9
+    environment:
+      - TZ=Asia/Shanghai
+    binds:
+      - /lzcapp/var/data:/app/data
+
+usage: |
+  Krss 是功能完整的自托管 RSS 阅读器。首次打开会引导创建账号，之后即可添加订阅、
+  阅读文章，支持 AI 摘要与翻译（需在设置中填入自己的 API Key）、自动化规则引擎、
+  社交 / 通知 / 图片多视图，并通过内置 MCP 服务器（/mcp，长期 token 鉴权）接入
+  Claude 等外部 AI 客户端。全部数据保存在应用数据目录中，重启不丢失。
