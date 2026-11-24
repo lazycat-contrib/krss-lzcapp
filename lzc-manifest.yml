@@ -9,8 +9,8 @@ application:
 services:
   krss:
     # ghcr.io/kue02/krss:1.1.9
-    # upstream: ghcr.io/kue02/krss:1.1.9
-    image: ghcr.1ms.run/kue02/krss:1.1.9
+    # upstream: ghcr.io/kue02/krss:1.3.0
+    image: ghcr.1ms.run/kue02/krss:1.3.0
     environment:
       - TZ=Asia/Shanghai
     binds:
