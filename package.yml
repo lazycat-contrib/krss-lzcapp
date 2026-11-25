@@ -1,5 +1,5 @@
 package: community.lazycat.app.krss
-version: 1.3.0
+version: 1.4.0
 name: Krss
 description: "Full-featured self-hosted RSS reader: single binary with SQLite, built-in AI summaries and translation, automation rules, multiple views, and MCP integration."
 min_os_version: 1.5.0
